@@ -11,7 +11,7 @@ from annotated_text import annotated_text  # pip install st-annotated-text
 
 
 aai_api_key = st.secrets['assemblyai']['api_key']
-openai_api_key = 
+openai_api_key = st.secrets['openai']['api_key']
 
 language_codes = {
 	"Portuguese": "pt",		  # Key: Portuguese, Value: 'pt'
