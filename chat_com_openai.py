@@ -24,7 +24,7 @@ def generate_response(openai_client, system_prompt_text, user_prompt_text):
 
 
 if __name__ == "__main__":
-    openai_client = OpenAI(api_key='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')  # Certifique-se de substituir por uma chave de API válida.
+    openai_client = OpenAI(api_key='st.secrets['openai']['api_key']')  # Certifique-se de substituir por uma chave de API válida.
     system_prompt_text = "Você é um assistente prestativo."
     user_prompt_text = "Explique a teoria da relatividade em termos simples."
 
