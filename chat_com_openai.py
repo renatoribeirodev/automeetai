@@ -1,3 +1,4 @@
+import streamlit as st
 from openai import OpenAI
 
 def generate_response(openai_client, system_prompt_text, user_prompt_text):
@@ -24,7 +25,7 @@ def generate_response(openai_client, system_prompt_text, user_prompt_text):
 
 
 if __name__ == "__main__":
-    openai_client = OpenAI(api_key='') # Certifique-se de substituir por uma chave de API válida.
+    openai_client = OpenAI(st.secrets['openai']['api_key']) # Certifique-se de substituir por uma chave de API válida.
     system_prompt_text = "Você é um assistente prestativo."
     user_prompt_text = "Explique a teoria da relatividade em termos simples."
 
